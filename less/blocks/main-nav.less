@@ -1,3 +1,10 @@
+.main-nav {
+  position: absolute;
+  z-index: 1000;
+
+  width: 100%;
+}
+
 .main-nav__item {
   padding: 10px;
 
@@ -9,10 +16,13 @@
   text-align: center;
   text-transform: uppercase;
 
+  background-color: @bg-color-2;
+
   border-top: 1px solid #000000;
   border-bottom: 1px solid #485461;
 }
 
 .main-nav--nojs {
+  position: static;
   display: block;
 }
