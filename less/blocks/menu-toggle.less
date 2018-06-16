@@ -1,0 +1,83 @@
+.menu-toggle {
+  position: absolute;
+  z-index: 1000;
+  top: 17px;
+  right: 20px;
+
+  display: block;
+  width: 40px;
+  height: 40px;
+
+  cursor: pointer;
+  border: none;
+}
+
+.menu-toggle:focus {
+  border: none;
+  outline: none;
+}
+
+.menu-toggle::before {
+  content: "";
+
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 1px;
+
+  width: 35px;
+  height: 3px;
+
+  background-color: #ffffff;
+  box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff;
+}
+
+.menu-toggle--close {
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+
+    position: absolute;
+    top: 13px;
+    left: 3px;
+
+    width: 30px;
+    height: 3px;
+
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+
+// <button class="menu-toggle" type="button">
+//   <span class="hidden">Menu toggle</span>
+// </button>
+
+/*
+<script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.menu-toggle');
+
+      navMain.classList.remove('main-nav--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('hidden')) {
+          navMain.classList.remove('hidden');
+          navToggle.classList.add('menu-toggle--close');
+        } else {
+          navMain.classList.add('hidden');
+          navToggle.classList.remove('menu-toggle--close');
+        }
+      });
+</script>
+*/
