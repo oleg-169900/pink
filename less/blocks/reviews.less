@@ -1,0 +1,39 @@
+.reviews {
+  overflow-x: hidden;
+}
+
+.reviews__list {
+  position: relative;
+  display: flex;
+  width: 300%;
+  transition-duration: 1s;
+}
+
+.reviews__toggles {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px auto;
+  width: 80px;
+}
+
+.reviews__toggle {
+  width: 7px;
+  height: 7px;
+
+  background: #959595;
+
+  border: 1px solid #959595;
+  border-radius: 50%;
+}
+
+.reviews__toggle--active {
+  width: 10px;
+  height: 10px;
+  border: 5px solid @text-color-1;
+}
+
+.reviews__list--nojs {
+  flex-wrap: wrap;
+  width: 100%;
+}

@@ -93,9 +93,9 @@
               <p class="advantage__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </li>
           </ul>
-          <picture class="advantages__img">
+          <picture class="advantages__pic">
             <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@2x.png 2x, img/iphone-screen-3-tablet@1x.png 1x">
-            <img src="img/iphone-screen-3-mobile@1x.png" srcset="img/iphone-screen-3-mobile@2x.png 2x" alt="Розовый экран со смайликом">
+            <img class="advantages__img" src="img/iphone-screen-3-mobile@1x.png" srcset="img/iphone-screen-3-mobile@2x.png 2x" alt="Розовый экран со смайликом">
           </picture>
         </section>
 
@@ -111,7 +111,7 @@
           <button class="reviews__arrow  reviews__arrow--left" id="reviews-arrow-left" type="button">
             <span class="hidden">Стрелка влево</span>
           </button>
-          <ul class="reviews__list  slider">
+          <ul class="reviews__list  reviews__list--nojs">
             <li class="review">
               <h3 class="review__title">Николай Петров</h3>
               <div class="review__subtitle">25 лет, водитель трамвая</div>
@@ -132,7 +132,7 @@
             <span class="hidden">Стрелка вправо</span>
           </button>
           <div class="reviews__toggles  reviews__toggles--mobile">
-            <button class="reviews__toggle" id="review-toggle-1" type="button">
+            <button class="reviews__toggle  reviews__toggle--active" id="review-toggle-1" type="button">
               <span class="hidden">review toggle 1</span>
             </button>
             <button class="reviews__toggle" id="review-toggle-2" type="button">
@@ -270,5 +270,6 @@
       </footer>
     </div>
     <script src="js/menu-toggle.js"></script>
+    <script src="js/slider.js"></script>
   </body>
 </html>
