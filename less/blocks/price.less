@@ -4,9 +4,90 @@
 
 .price::before {
   content: "";
+
   display: block;
   width: 100%;
   height: 94px;
 
   background: url("../img/bg-triangle-white.svg") no-repeat center;
+}
+
+.price__table-wrapper {
+  margin-top: 50px;
+  overflow-x: scroll;
+}
+
+.price__table {
+  width: 300%;
+  border-collapse: collapse;
+  overflow-x: scroll;
+}
+
+.price__list {
+  left: 100%;
+  background-color: #ffffff;
+}
+
+.price__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price__cell {
+  padding: 15px 30px;
+  border: 2px solid @border-color-1;
+  border-top: none;
+}
+
+.price__cell--mobile-invisible {
+  display: none;
+}
+
+.price__name {
+  font-size: 14px;
+  color: @text-color-1;
+  text-transform: uppercase;
+}
+
+.price__cell--top {
+  position: relative;
+  z-index: 100;
+  background-color: @bg-color-2;
+}
+
+.price__cell--center {
+  z-index: 99;
+}
+
+.price__cell--center::before {
+  content: "ХИТ";
+
+  position: absolute;
+  left: -25px;
+  top: 0px;
+
+  display: block;
+  width: 80px;
+  height: 20px;
+  padding-left: 25px;
+  padding-top: 3px;
+
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+
+  background: @bg-color-3;
+
+  transform: rotate(-45deg);
+}
+
+.price__text {
+  display: block;
+
+  font-size: 18px;
+  line-height: 30px;
+  color: @text-color-2;
+  text-align: center;
+  text-transform: uppercase;
 }
