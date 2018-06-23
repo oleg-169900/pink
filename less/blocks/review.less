@@ -19,3 +19,35 @@
   font-size: @font-size-1;
   line-height: 24px;
 }
+
+@media @tablet-width {
+  .review {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .review__title {
+    order: 2;
+    width: 100%;
+    padding-bottom: 0;
+  }
+
+  .review__subtitle {
+    order: 3;
+    display: block;
+    width: 100%;
+    padding-bottom: 40px;
+  }
+
+  .review__text {
+    order: 1;
+
+    width: 90%;
+    margin-bottom: 0;
+
+    font-size: @font-size-3;
+    line-height: 30px;
+  }
+}

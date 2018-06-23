@@ -4,6 +4,7 @@
 }
 
 .contacts__title {
+  font-family: @font-2;
   font-size: @font-size-6;
   color: @text-color-1;
   font-weight: lighter;
@@ -26,6 +27,7 @@
 
 .contacts__link {
   display: block;
+  font-family: @font-2;
   font-size: @font-size-6;
   color: @text-color-3;
 }
@@ -34,7 +36,6 @@
   display: block;
   width: 100%;
   height: 300px;
-
   background: url("../img/bg-map-mobile.png") no-repeat 100% 100%;
 }
 
@@ -42,4 +43,37 @@
   width: 100%;
   height: 300px;
   border: none;
+}
+
+@media @tablet-width {
+  .contacts__title {
+    width: 400px;
+    margin: 0 auto;
+    font-size: @font-size-7;
+  }
+
+  .contacts__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .contacts__link {
+    width: 250px;
+  }
+
+  .contacts__map-wrapper {
+    background-image: url("../img/bg-map-tablet@1x.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+@media @tablet-width and (min-resolution: 144dpi),
+       @tablet-width and (min-resolution: 1.5dppx) {
+   .contacts__map-wrapper {
+     background-image: url("../img/bg-map-tablet@2x.jpg");
+     background-position: center;
+     background-size: cover;
+  }
 }

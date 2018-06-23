@@ -1,3 +1,41 @@
 .info {
   display: none;
 }
+
+@media @tablet-width {
+  .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 660px;
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .info__text-field {
+    width: 45%;
+  }
+
+  .info__title {
+    padding-bottom: 20px;
+    font-size: @font-size-6;
+  }
+
+  .info__text {
+    padding-bottom: 20px;
+    font-size: @font-size-1;
+    line-height: 24px;
+  }
+
+  .info__link {
+    font-size: @font-size-1;
+    color: @text-color-3;
+    text-decoration: underline;
+  }
+
+  .info__link:hover {
+    text-decoration: none;
+  }
+}

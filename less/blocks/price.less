@@ -25,7 +25,6 @@
 
 .price__list {
   left: 100%;
-  background-color: #ffffff;
 }
 
 .price__item {
@@ -36,6 +35,7 @@
 
 .price__cell {
   padding: 15px 30px;
+  background-color: #ffffff;
   border: 2px solid @border-color-1;
   border-top: none;
 }
@@ -90,4 +90,32 @@
   color: @text-color-2;
   text-align: center;
   text-transform: uppercase;
+}
+
+@media @tablet-width {
+  .price__table {
+    width: 100%;
+  }
+
+  .price__table-wrapper {
+    margin-top: 20px;
+    padding-bottom: 70px;
+  }
+
+  .price__cell--mobile-invisible {
+    display: table-cell;
+  }
+
+  .price__cell--top-left {
+    background: transparent;
+  }
+
+  .price__name--mobile-visible {
+    display: none;
+  }
+
+  .price__item {
+    width: 30px;
+    margin: 0 auto;
+  }
 }
