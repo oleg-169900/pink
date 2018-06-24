@@ -1,7 +1,6 @@
 .main-nav {
   position: absolute;
   z-index: 1000;
-
   width: 100%;
 }
 
@@ -22,6 +21,14 @@
   border-bottom: 1px solid #485461;
 }
 
+.main-nav__item:hover {
+  color: @text-color-3;
+}
+
+.main-nav__link:active {
+  color: @text-color-1;
+}
+
 .main-nav--nojs {
   position: static;
   display: block;
@@ -36,5 +43,34 @@
   .main-nav--nojs {
     position: absolute;
     display: block;
+  }
+}
+
+@media @desktop-width {
+  .main-nav {
+    position: static;
+    display: block;
+  }
+
+  .main-nav__list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .main-nav__item {
+    padding: 0 40px;
+
+    text-transform: none;
+    font-size: @font-size-3;
+    font-weight: normal;
+
+    background-color: rgba(0, 0, 0, 0);
+
+    border: none;
+  }
+
+  .main-nav__item:hover {
+    font-weight: bold;
   }
 }
