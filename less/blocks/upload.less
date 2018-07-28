@@ -78,3 +78,63 @@
   color: #dddfe0;
   border-color: #dddfe0;
 }
+
+@media @tablet-width {
+  .upload {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
+
+  .upload__pic {
+    width: 41.5%;
+  }
+
+  .upload__controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+
+    width: 53%;
+    padding: 0;
+  }
+
+  .upload__control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    margin: 0;
+  }
+
+  .upload__toggle {
+    order: -1;
+    svg {
+      fill: @bg-color-3;
+    }
+  }
+
+  .upload__scale {
+    width: 100%;
+  }
+
+  .upload__scale--mobile {
+    display: none;
+  }
+
+  .upload__scale--tablet {
+    display: flex;
+  }
+
+  .upload__btn {
+    display: flex;
+    justify-content: center;
+    width: 45%;
+    margin: 0;
+  }
+}
