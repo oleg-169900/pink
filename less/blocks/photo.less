@@ -2,12 +2,14 @@
   text-align: center;
   margin: 0 20px;
   margin-bottom: 20px;
+  background: #f2f2f2;
 }
 
 .photo--first {
   position: relative;
   margin: 0;
   margin-bottom: 20px;
+  background: #ffffff;
 }
 
 .photo--first::before {
@@ -44,12 +46,11 @@
   line-height: 24px;
   color: @text-color-1;
   text-align: left;
-
-  background: #f2f2f2;
 }
 
 .photo__text-field--first {
   margin: 0 20px;
+  background: #f2f2f2;
 }
 
 .photo__text {
@@ -65,4 +66,31 @@
 .photo__like-count {
   text-transform: uppercase;
   color: @text-color-3;
+}
+
+@media @tablet-width {
+  .photo {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+
+    width: 45%;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .photo--first {
+    flex-grow: 2;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 40px;
+  }
+
+  .photo__link {
+    width: 100%;
+  }
+
+  .photo__text-field {
+    padding: 20px 30px;
+  }
 }

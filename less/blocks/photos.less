@@ -11,3 +11,16 @@
   font-size: @font-size-1;
   line-height: 30px;
 }
+
+@media @tablet-width {
+  .photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .photos__text {
+    padding: 100px;
+    font-size: @font-size-3;
+  }
+}
