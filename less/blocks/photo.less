@@ -68,6 +68,12 @@
   color: @text-color-3;
 }
 
+.photo__like:hover {
+  svg {
+    stroke: #737981;
+  }
+}
+
 @media @tablet-width {
   .photo {
     display: flex;
@@ -93,5 +99,49 @@
   .photo__text-field {
     width: 100%;
     padding: 20px 30px;
+  }
+}
+
+@media @desktop-width {
+  .photo {
+    width: 26.8%;
+    margin: 10px;
+  }
+
+  .photo--first {
+    width: 100%;
+    margin: 0;
+  }
+
+  .photo__text-field {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    font-size: @font-size-0;
+  }
+
+  .photo__text-field--first {
+    width: 79%;
+    margin: 0 auto;
+  }
+
+  .photo__author-field {
+    order: 1;
+  }
+
+  .photo__like-field {
+    order: 3;
+    display: flex;
+  }
+
+  .photo__like-count {
+    order: -1;
+    margin-right: 10px;
+  }
+
+  .photo__text {
+    order: 4;
+    width: 100%;
   }
 }

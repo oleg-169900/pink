@@ -74,9 +74,23 @@
   border-color: @text-color-3;
 }
 
+.upload__btn--post:hover {
+  color: #ffffff;
+  background: @bg-color-3;
+}
+
 .upload__btn--cancel {
   color: #dddfe0;
   border-color: #dddfe0;
+}
+
+.upload__btn--cancel:hover {
+  color: #ffffff;
+  background: #dddfe0;
+}
+
+.upload__btn:active {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 @media @tablet-width {
@@ -136,5 +150,31 @@
     justify-content: center;
     width: 45%;
     margin: 0;
+  }
+}
+
+@media @desktop-width {
+  .upload {
+    justify-content: space-around;
+    width: 78.3%;
+    margin: 0 auto;
+    padding: 100px 30px;
+  }
+
+  .upload__pic {
+    width: 37%;
+  }
+
+  .upload__controls {
+    align-content: flex-start;
+    width: 40%;
+  }
+
+  .upload__control {
+    margin-bottom: 35px;
+  }
+
+  .upload__btn {
+    margin-top: 100px;
   }
 }
