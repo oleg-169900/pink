@@ -27,7 +27,7 @@
     </svg>
     <div class="body-wrapper">
       <header class="page-header">
-        <h1 class="hidden">Фотографии</h1>
+        <h1 class="hidden">Конкурс от Пинк</h1>
         <div class="logo">
           <a class="logo__link" href="index.html">
             <picture class="logo__img">
@@ -63,79 +63,81 @@
             <h2 class="page-heading__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
           </div>
         </div>
+        <form class="form" action="https://echo.htmlacademy.ru/" method="get">
+          <p class="form__heading">Поделитесь своей историей и получите шанс выиграть ценный приз &mdash; 1000 миль на Вашу бонусную карту!</p>
+          <div class="field-text  form__inner">
+            <label class="field-text__item">
+              <span class="field-text__text">Фамилия:</span>
+              <input class="field-text__input" type="text" name="user-surname" placeholder="Укажите фамилию*" required>
+            </label>
+            <label class="field-text__item">
+              <span class="field-text__text">Имя:</span>
+              <input class="field-text__input" type="text" name="username" placeholder="Введите Ваше имя*" required>
+            </label>
+            <label class="field-text__item">
+              <span class="field-text__text">Отчество:</span>
+              <input class="field-text__input" type="text" name="user-patronymic" placeholder="Ну и отчество тоже">
+            </label>
+          </div>
+          <div class="field-checkbox  form__inner  form__inner--alt">
+            <div class="field-checkbox__heading">Ваши безбашенные достижения в путешествии:</div>
+            <label class="field-checkbox__item">
+              <input class="field-checkbox__input" type="checkbox" name="achievment" checked>
+              <span class="field-checkbox__text">Сделал селфи с акулой</span>
+            </label>
+            <label class="field-checkbox__item">
+              <input class="field-checkbox__input" type="checkbox" name="achievment" checked>
+              <span class="field-checkbox__text">Обгорел на пляже</span>
+            </label>
+            <label class="field-checkbox__item">
+              <input class="field-checkbox__input" type="checkbox" name="achievment">
+              <span class="field-checkbox__text">Видел Чака Норриса</span>
+            </label>
+            <label class="field-checkbox__item">
+              <input class="field-checkbox__input" type="checkbox" name="achievment" checked>
+              <span class="field-checkbox__text">Накупил сувениров</span>
+            </label>
+            <label class="field-checkbox__item">
+              <input class="field-checkbox__input" type="checkbox" name="achievment">
+              <span class="field-checkbox__text">Разгромил отель</span>
+            </label>
+          </div>
+          <div class="field-text  form__inner">
+            <div class="field-text__heading">Контактная информация:</div>
+            <label class="field-text__item">
+              <span class="field-text__text">Номер телефона:</span>
+              <input class="field-text__input" type="tel" name="tel" placeholder="Номер, пожалуйста" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
+            </label>
+            <label class="field-text__item">
+              <span class="field-text__text">Адрес почты:</span>
+              <input class="field-text__input" type="email" name="email" placeholder="Введите e-mail*" required>
+            </label>
+          </div>
+          <div class="field-radio  form__inner  form__inner--alt">
+            <div class="field-radio__heading">С каким приложением путешествовали?</div>
+            <label class="field-radio__item">
+              <input class="field-radio__input" type="radio" name="application" checked>
+              <span class="field-radio__text">Pink для iOS</span>
+            </label>
+            <label class="field-radio__item">
+              <input class="field-radio__input" type="radio" name="application">
+              <span class="field-radio__text">Pink для Android</span>
+            </label>
+            <label class="field-radio__item">
+              <input class="field-radio__input" type="radio" name="application">
+              <span class="field-radio__text">Windows Phone</span>
+            </label>
+          </div>
+          <div class="field-textarea  form__inner">
+            <div class="field-textarea__heading">Опишите свои эмоции:</div>
+              <textarea class="field-textarea__text" name="emotions" id="emotions" rows="5" cols="24">Опишите подробно все свои восторги</textarea>
+          </div>
+          <div class="form__inner">
+            <input class="form__btn" type="submit" value="Отправить форму">
+            <span class="form__fields-required"> &nbsp;<sup>*</sup>&nbsp;&nbsp;&ndash;&nbsp;&nbsp;обязательные поля</span>
+          </div>
+        </form>
       </main>
-      <form class="form" action="https://echo.htmlacademy.ru/" method="get">
-        <p class="form__heading">Поделитесь своей историей и получите шанс выиграть ценный приз &mdash; 1000 миль на Вашу бонусную карту!</p>
-        <div class="field-text  form__inner">
-          <label class="field-text__item">
-            <span class="field-text__text">Фамилия:</span>
-            <input class="field-text__input" type="text" name="user-surname" placeholder="Укажите фамилию*" required>
-          </label>
-          <label class="field-text__item">
-            <span class="field-text__text">Имя:</span>
-            <input class="field-text__input" type="text" name="username" placeholder="Введите Ваше имя*" required>
-          </label>
-          <label class="field-text__item">
-            <span class="field-text__text">Отчество:</span>
-            <input class="field-text__input" type="text" name="user-patronymic" placeholder="Ну и отчество тоже">
-          </label>
-        </div>
-        <div class="field-checkbox  form__inner">
-          <div class="field-checkbox__heading">Ваши безбашенные достижения в путешествии:</div>
-          <label class="field-checkbox__item">
-            <input class="field-checkbox__input" type="checkbox" name="achievment" checked>
-            <span class="field-checkbox__text">Сделал селфи с акулой</span>
-          </label>
-          <label class="field-checkbox__item">
-            <input class="field-checkbox__input" type="checkbox" name="achievment" checked>
-            <span class="field-checkbox__text">Обгорел на пляже</span>
-          </label>
-          <label class="field-checkbox__item">
-            <input class="field-checkbox__input" type="checkbox" name="achievment">
-            <span class="field-checkbox__text">Видел Чака Норриса</span>
-          </label>
-          <label class="field-checkbox__item">
-            <input class="field-checkbox__input" type="checkbox" name="achievment" checked>
-            <span class="field-checkbox__text">Накупил сувениров</span>
-          </label>
-          <label class="field-checkbox__item">
-            <input class="field-checkbox__input" type="checkbox" name="achievment">
-            <span class="field-checkbox__text">Разгромил отель</span>
-          </label>
-        </div>
-        <div class="field-text  form__inner">
-          <div class="field-text__heading">Контактная информация:</div>
-          <label class="field-text__item">
-            <span class="field-text__text">Номер телефона:</span>
-            <input class="field-text__input" type="tel" name="tel" placeholder="Номер, пожалуйста" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
-          </label>
-          <label class="field-text__item">
-            <span class="field-text__text">Адрес почты:</span>
-            <input class="field-text__input" type="email" name="email" placeholder="Введите e-mail*" required>
-          </label>
-        </div>
-        <div class="field-radio  form__inner">
-          <div class="field-radio__title">С каким приложением путешествовали?</div>
-          <label class="field-radio__item">
-            <input class="field-radio__input" type="radio" name="application" checked>
-            <span class="field-radio__text">Pink для iOS</span>
-          </label>
-          <label class="field-radio__item">
-            <input class="field-radio__input" type="radio" name="application">
-            <span class="field-radio__text">Pink для Android</span>
-          </label>
-          <label class="field-radio__item">
-            <input class="field-radio__input" type="radio" name="application">
-            <span class="field-radio__text">Windows Phone</span>
-          </label>
-        </div>
-        <div class="field-textarea  form__inner">
-          <div class="field-textarea__heading">Опишите свои эмоции:</div>
-            <textarea class="field-textarea__text" name="emotions" id="emotions" rows="5" cols="24">Опишите подробно все свои восторги</textarea>
-        </div>
-        <input class="btn" type="submit" value="Отправить отзыв">
-        <span class="form__fields-required"> &nbsp;<sup>*</sup>&nbsp;&nbsp;&ndash;&nbsp;&nbsp;обязательные поля</span>
-      </form>
     </div>
     <footer class="page-footer">
       <div class="logo  logo--footer">

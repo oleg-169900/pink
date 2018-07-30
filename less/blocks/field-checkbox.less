@@ -1,0 +1,33 @@
+.field-checkbox__heading {
+  color: @text-color-3;
+  font-size: @font-size-1;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.field-checkbox__item {
+  display: block;
+  margin: 20px 0;
+}
+
+.field-checkbox__input {
+  display: none;
+}
+
+.field-checkbox__text::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+
+  width: 40px;
+  height: 40px;
+  margin-right: 23px;
+
+  background-color: #ffffff;
+
+  border: 1px solid @border-color-1;
+}
+
+.field-checkbox__input:checked + .field-checkbox__text::before {
+  background: #ffffff url("../img/icon-tick.svg") no-repeat center;
+}
