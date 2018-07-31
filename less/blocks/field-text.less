@@ -26,9 +26,68 @@
   font-size: @font-size-2;
   text-indent: 20px;
 
-  border: 1px solid @border-color-1;
+  border: 2px solid @border-color-1;
 }
 
 .field-text__input::placeholder {
   color: @text-color-1;
+}
+
+@media @tablet-width {
+  .field-text {
+    padding: 0 50px 60px;
+    border: 2px solid @border-color-1;
+  }
+
+  .field-text__heading {
+    display: block;
+    width: 220px;
+    margin: 0 auto;
+    margin-top: -10px;
+    padding: 0 20px;
+
+    color: @text-color-3;
+    font-size: @font-size-1;
+    text-transform: uppercase;
+    text-align: center;
+
+    background: #ffffff;
+  }
+
+  .field-text__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0;
+  }
+
+  .field-text__item--contact {
+    flex-wrap: wrap;
+
+    .field-text__text {
+      order: 1;
+      margin-top: 10px;
+      margin-left: 20px;
+    }
+  }
+
+  .field-text__text {
+    margin: 0;
+    margin-right: 20px;
+  }
+
+  .field-text__input {
+    padding: 20px 0;
+    font-size: @font-size-3;
+  }
+
+  .field-text__input--phone {
+    padding-right: 60px;
+    background: url("../img/icon-phone.svg") no-repeat 95% center;
+  }
+
+  .field-text__input--email {
+    padding-right: 60px;
+    background: url("../img/icon-mail.svg") no-repeat 95% center;
+  }
 }

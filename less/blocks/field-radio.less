@@ -31,3 +31,17 @@
 .field-radio__input:checked + .field-radio__text::before {
   background: radial-gradient(at center, @bg-color-3 30%, #ffffff 30%);
 }
+
+@media @tablet-width {
+  .field-radio {
+    padding: 0 50px 60px;
+    border: 2px solid @border-color-1;
+  }
+
+  .field-radio__heading {
+    width: 320px;
+    margin: -10px auto 50px;
+    padding: 0 20px;
+    background: #ffffff;
+  }
+}

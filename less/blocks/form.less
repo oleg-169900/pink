@@ -14,13 +14,21 @@
   line-height: 30px;
 }
 
+.form__text--tablet {
+  display: none;
+}
+
 .form__inner {
   padding: 40px 0;
   .padding;
 }
 
-.form__inner--alt {
+.form__inner:nth-child(2n+1) {
   background: #f2f2f2;
+}
+
+.form__inner:last-child {
+  background: #ffffff;
 }
 
 .form__btn {
@@ -61,5 +69,71 @@
 
   sup {
     color: @text-color-3;
+  }
+}
+
+@media @tablet-width {
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+    .padding;
+    font-size: @font-size-3;
+  }
+
+  .form__heading {
+    order: 0;
+    width: 520px;
+    font-size: @font-size-3;
+  }
+
+  .form__text--tablet {
+    display: block;
+  }
+
+  .form__inner {
+    width: 100%;
+    padding: 40px 0;
+    margin: 30px 0;
+  }
+
+  .form__inner:nth-child(2n+1) {
+    background: #ffffff;
+  }
+
+  .form__inner--personal {
+    order: 1;
+  }
+
+  .form__inner--radio {
+    order: 2;
+  }
+
+  .form__inner--contacts {
+    order: 3;
+  }
+
+  .form__inner--checkbox {
+    order: 4;
+  }
+
+  .form__inner--textarea {
+    order: 5;
+  }
+
+  .form__inner--submit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    order: 6;
+  }
+
+  .form__btn {
+    width: 300px;
+    margin: 0;
+  }
+
+  .form__fields-required {
+    padding: 0;
+    margin: 0;
   }
 }

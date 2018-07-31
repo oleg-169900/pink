@@ -19,60 +19,16 @@
   border: 1px solid @border-color-1;
 }
 
+@media @tablet-width {
+  .field-textarea {
+    padding: 0 50px 60px;
+    border: 2px solid @border-color-1;
+  }
 
-// @media @tablet-width {
-//   .field-textarea__title {
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-//
-//     font-size: 21px;
-//     margin-bottom: 60px;
-//   }
-//
-//   .field-textarea__text {
-//     height: 120px;
-//   }
-//
-//   .field-textarea__title::before {
-//     content: "";
-//     display: inline-block;
-//     vertical-align: top;
-//
-//     width: 125px;
-//     height: 1px;
-//     margin-right: 65px;
-//     background: @secondary-color;
-//   }
-//
-//   .field-textarea__title::after {
-//     content: "";
-//     display: inline-block;
-//     vertical-align: top;
-//
-//     width: 125px;
-//     height: 1px;
-//     margin-left: 65px;
-//     background: @secondary-color;
-//   }
-// }//@media (min-width: 768px)
-//
-// @media @desktop-width {
-//   .field-textarea {
-//     width: 960px;
-//   }
-//
-//   .field-textarea__title {
-//     text-align: center;
-//   }
-//
-//   .field-textarea__title::before,
-//   .field-textarea__title::after {
-//     width: 280px;
-//   }
-//
-//   .field-textarea__text {
-//     margin-bottom: 10px;
-//     padding-bottom: 20px;
-//   }
-// }
+  .field-textarea__heading {
+    width: 190px;
+    margin: -15px auto 50px;
+    padding: 0 20px;
+    background: #ffffff;
+  }
+}
