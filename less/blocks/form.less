@@ -87,7 +87,7 @@
   }
 
   .form__text--tablet {
-    display: block;
+    display: inline;
   }
 
   .form__inner {
@@ -135,5 +135,22 @@
   .form__fields-required {
     padding: 0;
     margin: 0;
+  }
+}
+
+@media @desktop-width {
+  .form {
+    justify-content: space-between;
+    .padding-desktop;
+  }
+
+  .form__heading {
+    width: 800px;
+    padding: 60px 0;
+  }
+
+  .form__inner--personal,
+  .form__inner--radio {
+    width: 46%;
   }
 }

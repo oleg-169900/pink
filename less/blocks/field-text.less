@@ -29,6 +29,11 @@
   border: 2px solid @border-color-1;
 }
 
+.field-text__input:hover,
+.field-text__input:focus {
+  border-color: @text-color-1;
+}
+
 .field-text__input::placeholder {
   color: @text-color-1;
 }
@@ -39,17 +44,26 @@
     border: 2px solid @border-color-1;
   }
 
+  .field-text--personal {
+    border: none;
+  }
+
   .field-text__heading {
     display: block;
-    width: 220px;
     margin: 0 auto;
     margin-top: -10px;
+    text-align: center;
+  }
+
+  .field-text__title {
+    width: 220px;
+    margin: 0 auto;
     padding: 0 20px;
 
     color: @text-color-3;
     font-size: @font-size-1;
     text-transform: uppercase;
-    text-align: center;
+    font-weight: lighter;
 
     background: #ffffff;
   }
@@ -89,5 +103,38 @@
   .field-text__input--email {
     padding-right: 60px;
     background: url("../img/icon-mail.svg") no-repeat 95% center;
+  }
+}
+
+@media @desktop-width {
+  .field-text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+
+    padding-bottom: 0;
+  }
+
+  .field-text--personal {
+    padding-left: 0;
+  }
+
+  .field-text__heading--contacts {
+    width: 100%;
+    margin: 0;
+    margin-top: -10px;
+  }
+
+  .field-text__item {
+    width: 100%;
+    margin: 0;
+  }
+
+  .field-text__item--contact {
+    width: 47%;
+    margin: 0;
+    margin-top: 40px;
+    margin-bottom: 20px;
   }
 }

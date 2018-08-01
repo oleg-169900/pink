@@ -1,11 +1,14 @@
 .field-textarea__heading {
-  font-size: @font-size-1;
-  line-height: 30px;
   text-align: center;
-  color: @text-color-3;
-  text-transform: uppercase;
 }
 
+.field-textarea__title {
+  color: @text-color-3;
+  font-size: @font-size-1;
+  text-transform: uppercase;
+  font-weight: lighter;
+  text-align: center;
+}
 
 .field-textarea__text {
   display: block;
@@ -19,6 +22,11 @@
   border: 1px solid @border-color-1;
 }
 
+.field-textarea__text:hover,
+.field-textarea__text:focus {
+  border-color: @text-color-1;
+}
+
 @media @tablet-width {
   .field-textarea {
     padding: 0 50px 60px;
@@ -26,8 +34,12 @@
   }
 
   .field-textarea__heading {
+    margin: -10px auto 50px;
+  }
+
+  .field-textarea__title {
     width: 190px;
-    margin: -15px auto 50px;
+    margin: 0 auto;
     padding: 0 20px;
     background: #ffffff;
   }
