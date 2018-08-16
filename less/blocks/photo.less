@@ -106,12 +106,16 @@
 @media @desktop-width {
   .photo {
     width: 26.8%;
-    margin: 10px;
+    margin: 10px 0;
   }
 
   .photo--first {
     width: 100%;
     margin: 0;
+  }
+
+  .photo:nth-child(2n+2) {
+    margin: 10px 20px;
   }
 
   .photo__text-field {
