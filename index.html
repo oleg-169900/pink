@@ -28,74 +28,77 @@
     </svg>
     <div class="body-wrapper">
       <header class="page-header">
-        <h1 class="hidden">Главная страница</h1>
-        <div class="logo">
-          <a class="logo__link" href="#">
-            <picture class="logo__img">
-              <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
-              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-              <img src="img/logo.svg" alt="logo">
-            </picture>
-          </a>
+        <div class="center  page-header__center">
+          <h1 class="hidden">Главная страница</h1>
+          <div class="logo">
+            <a class="logo__link" href="#">
+              <picture class="logo__img">
+                <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                <img src="img/logo.svg" alt="logo">
+              </picture>
+            </a>
+          </div>
+          <button class="menu-toggle" type="button">
+            <span class="hidden">Открыть/закрыть меню</span>
+          </button>
+          <nav class="main-nav  hidden  main-nav--nojs">
+            <ul class="main-nav__list">
+              <li class="main-nav__item  main-nav__item--active">
+                <a class="main-nav__link">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="photo.html">Фотографии</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="form.html">Конкурс</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <button class="menu-toggle" type="button">
-          <span class="hidden">Открыть/закрыть меню</span>
-        </button>
-        <nav class="main-nav  hidden  main-nav--nojs">
-          <ul class="main-nav__list">
-            <li class="main-nav__item  main-nav__item--active">
-              <a class="main-nav__link">Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="photo.html">Фотографии</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">Конкурс</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
-            </li>
-          </ul>
-        </nav>
       </header>
-
       <main>
         <div class="page-heading  page-heading--main">
-          <div class="page-heading__inner  page-heading__inner--main">
-            <h2 class="page-heading__title  page-heading__title--main">Взгляните на жизнь иначе!</h2>
-            <button class="page-heading__btn  btn" type="button">Скачать приложение</button>
-            <img class="page-heading__img" src="img/apple-logo.svg" alt="Логотип Apple">
-            <img class="page-heading__img" src="img/android-logo.svg" alt="Логотип Android">
-            <img class="page-heading__img" src="img/ms-logo.svg" alt="Логотип Microsoft">
-            <p class="page-heading__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          <div class="center">
+            <div class="page-heading__inner  page-heading__inner--main">
+              <h2 class="page-heading__title  page-heading__title--main">Взгляните на жизнь иначе!</h2>
+              <button class="page-heading__btn  btn" type="button">Скачать приложение</button>
+              <img class="page-heading__img" src="img/apple-logo.svg" alt="Логотип Apple">
+              <img class="page-heading__img" src="img/android-logo.svg" alt="Логотип Android">
+              <img class="page-heading__img" src="img/ms-logo.svg" alt="Логотип Microsoft">
+              <p class="page-heading__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+            </div>
           </div>
         </div>
-
         <section class="advantages">
           <h2 class="advantages__title">Устали от серости мегаполиса? <br> Нам есть, что вам предложить!</h2>
-          <ul class="advantages__list">
-            <li class="advantage">
-              <img class="advantage__img" src="img/iphone-screen-1-desktop@1x.png" srcset="img/iphone-screen-1-desktop@2x.png 2x" alt="Чёрно-белый экран">
-              <h3 class="advantage__title">Поднимает настроение</h3>
-              <p class="advantage__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов</p>
-            </li>
-            <li class="advantage">
-              <img class="advantage__img" src="img/iphone-screen-2-desktop@1x.png" srcset="img/iphone-screen-2-desktop@2x.png 2x" alt="Розовый экран">
-              <h3 class="advantage__title">Меняет мир вокруг</h3>
-              <p class="advantage__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-            </li>
-            <li class="advantage">
-              <img class="advantage__img" src="img/iphone-screen-3-desktop@1x.png" srcset="img/iphone-screen-3-desktop@2x.png 2x" alt="Розовый экран со смайликом">
-              <h3 class="advantage__title">Заводит новых друзей</h3>
-              <p class="advantage__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-            </li>
-          </ul>
-          <picture class="advantages__pic">
-            <source media="(min-width: 768px)" srcset="img/iphone-screen-3-tablet@2x.png 2x, img/iphone-screen-3-tablet@1x.png 1x">
-            <img class="advantages__img" src="img/iphone-screen-3-mobile@1x.png" srcset="img/iphone-screen-3-mobile@2x.png 2x" alt="Розовый экран со смайликом">
-          </picture>
+          <div class="center  advantages__center">
+            <ul class="advantages__list">
+              <li class="advantage">
+                <img class="advantage__img" src="img/iphone-screen-1-desktop@1x.png" srcset="img/iphone-screen-1-desktop@2x.png 2x" alt="Чёрно-белый экран">
+                <h3 class="advantage__title">Поднимает настроение</h3>
+                <p class="advantage__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов</p>
+              </li>
+              <li class="advantage">
+                <img class="advantage__img" src="img/iphone-screen-2-desktop@1x.png" srcset="img/iphone-screen-2-desktop@2x.png 2x" alt="Розовый экран">
+                <h3 class="advantage__title">Меняет мир вокруг</h3>
+                <p class="advantage__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+              </li>
+              <li class="advantage">
+                <img class="advantage__img" src="img/iphone-screen-3-desktop@1x.png" srcset="img/iphone-screen-3-desktop@2x.png 2x" alt="Розовый экран со смайликом">
+                <h3 class="advantage__title">Заводит новых друзей</h3>
+                <p class="advantage__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+              </li>
+            </ul>
+            <picture class="advantages__pic">
+              <source media="(min-width: 768px)" srcset="img/iphone-screen-3-tablet@2x.png 2x, img/iphone-screen-3-tablet@1x.png 1x">
+              <img class="advantages__img" src="img/iphone-screen-3-mobile@1x.png" srcset="img/iphone-screen-3-mobile@2x.png 2x" alt="Розовый экран со смайликом">
+            </picture>
+          </div>
         </section>
-
         <div class="info">
           <img class="info__img" src="img/timer.png" alt="Секундомер">
           <div class="info__text-field">
@@ -104,48 +107,48 @@
             <a class="info__link" href="https://ru.wikipedia.org/wiki/Британские_учёные">Узнать больше об исследовании</a>
           </div>
         </div>
-
         <section class="reviews">
-          <h2 class="hidden">Отзывы</h2>
-          <button class="reviews__arrow  reviews__arrow--left" id="reviews-arrow-left" type="button">
-            <span class="hidden">Стрелка влево</span>
-          </button>
-          <ul class="reviews__list  reviews__list--nojs">
-            <li class="review">
-              <h3 class="review__title">Николай Петров</h3>
-              <div class="review__subtitle">25 лет, водитель трамвая</div>
-              <p class="review__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные вещи! А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
-            </li>
-            <li class="review">
-              <h3 class="review__title">Иван Петров</h3>
-              <div class="review__subtitle">45 лет, таксист</div>
-              <p class="review__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные вещи! А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
-            </li>
-            <li class="review">
-              <h3 class="review__title">Пётр Иванов</h3>
-              <div class="review__subtitle">35 лет, дворник</div>
-              <p class="review__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные вещи! А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
-            </li>
-          </ul>
-          <button class="reviews__arrow  reviews__arrow--right" id="reviews-arrow-right" type="button">
-            <span class="hidden">Стрелка вправо</span>
-          </button>
-          <div class="reviews__toggles  reviews__toggles--mobile">
-            <button class="reviews__toggle  reviews__toggle--active" id="review-toggle-1" type="button">
-              <span class="hidden">review toggle 1</span>
+          <div class="center  reviews__center">
+            <h2 class="hidden">Отзывы</h2>
+            <button class="reviews__arrow  reviews__arrow--left" id="reviews-arrow-left" type="button">
+              <span class="hidden">Стрелка влево</span>
             </button>
-            <button class="reviews__toggle" id="review-toggle-2" type="button">
-              <span class="hidden">review toggle 2</span>
+            <ul class="reviews__list  reviews__list--nojs">
+              <li class="review">
+                <h3 class="review__title">Николай Петров</h3>
+                <div class="review__subtitle">25 лет, водитель трамвая</div>
+                <p class="review__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные вещи! А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
+              </li>
+              <li class="review">
+                <h3 class="review__title">Иван Петров</h3>
+                <div class="review__subtitle">45 лет, таксист</div>
+                <p class="review__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные вещи! А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
+              </li>
+              <li class="review">
+                <h3 class="review__title">Пётр Иванов</h3>
+                <div class="review__subtitle">35 лет, дворник</div>
+                <p class="review__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные вещи! А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
+              </li>
+            </ul>
+            <button class="reviews__arrow  reviews__arrow--right" id="reviews-arrow-right" type="button">
+              <span class="hidden">Стрелка вправо</span>
             </button>
-            <button class="reviews__toggle" id="review-toggle-3" type="button">
-              <span class="hidden">review toggle 3</span>
-            </button>
+            <div class="reviews__toggles  reviews__toggles--mobile">
+              <button class="reviews__toggle  reviews__toggle--active" id="review-toggle-1" type="button">
+                <span class="hidden">review toggle 1</span>
+              </button>
+              <button class="reviews__toggle" id="review-toggle-2" type="button">
+                <span class="hidden">review toggle 2</span>
+              </button>
+              <button class="reviews__toggle" id="review-toggle-3" type="button">
+                <span class="hidden">review toggle 3</span>
+              </button>
+            </div>
           </div>
         </section>
-
         <section class="price">
           <h2 class="hidden">Тарифы</h2>
-          <div class="price__table-wrapper">
+          <div class="center  price__table-wrapper">
             <table class="price__table">
               <tbody class="price__list">
                 <tr class="price__row">
@@ -236,63 +239,65 @@
             </table>
           </div>
         </section>
-
         <section class="contacts">
-          <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
-          <ul class="contacts__list">
-            <li class="contacts__item">
-              <span class="contacts__text">Звоните</span>
-              <a class="contacts__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
-            </li>
-            <li class="contacts__item">
-              <span class="contacts__text">Пишите</span>
-              <a class="contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-            </li>
-            <li class="contacts__item">
-              <span class="contacts__text">Приезжайте в гости</span>
-              <a class="contacts__link" href="#">ул. Большая Конюшенная, 19/8</a>
-            </li>
-          </ul>
+          <div class="center">
+            <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <span class="contacts__text">Звоните</span>
+                <a class="contacts__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
+              </li>
+              <li class="contacts__item">
+                <span class="contacts__text">Пишите</span>
+                <a class="contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+              </li>
+              <li class="contacts__item">
+                <span class="contacts__text">Приезжайте в гости</span>
+                <a class="contacts__link" href="#">ул. Большая Конюшенная, 19/8</a>
+              </li>
+            </ul>
+          </div>
           <div class="contacts__map-wrapper">
             <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424177667!2d30.320889251711492!3d59.938796868958846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1528723179840" allowfullscreen></iframe>
           </div>
         </section>
       </main>
-
       <footer class="page-footer">
-        <div class="logo  logo--footer">
-          <a class="logo__link" href="#">
-            <picture class="logo__img">
-              <source media="(min-width: 1200px)" srcset="img/logo-desktop--footer.svg">
-              <img src="img/logo-mobile--footer.svg" alt="logo">
-            </picture>
-          </a>
-        </div>
-        <div class="social">
-          <a class="social__link" href="https://vk.com/htmlacademy">
-            <svg width="17" height="14" fill="#ffffff">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use>
-            </svg>
-            <span class="hidden">twitter</span>
-          </a>
-          <a class="social__link" href="https://ru-ru.facebook.com/htmlacademy/">
-            <svg width="8" height="19" fill="#ffffff">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-fb"></use>
-            </svg>
-            <span class="hidden">fb</span>
-          </a>
-          <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
-            <svg width="20" height="14" fill="#ffffff">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-youtube"></use>
-            </svg>
-            <span class="hidden">youtube</span>
-          </a>
-        </div>
-        <div class="copyright">
-          <span class="copyright__text">Разработано</span>
-          <a class="copyright__link" href="htmlacademy.ru">
-            <img src="img/logo-htmlacademy.svg" alt="HTML Academy">
-          </a>
+        <div class="center  page-footer__center">
+          <div class="logo  logo--footer">
+            <a class="logo__link" href="#">
+              <picture class="logo__img">
+                <source media="(min-width: 1200px)" srcset="img/logo-desktop--footer.svg">
+                <img src="img/logo-mobile--footer.svg" alt="logo">
+              </picture>
+            </a>
+          </div>
+          <div class="social">
+            <a class="social__link" href="https://vk.com/htmlacademy">
+              <svg width="17" height="14" fill="#ffffff">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use>
+              </svg>
+              <span class="hidden">twitter</span>
+            </a>
+            <a class="social__link" href="https://ru-ru.facebook.com/htmlacademy/">
+              <svg width="8" height="19" fill="#ffffff">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-fb"></use>
+              </svg>
+              <span class="hidden">fb</span>
+            </a>
+            <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
+              <svg width="20" height="14" fill="#ffffff">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-youtube"></use>
+              </svg>
+              <span class="hidden">youtube</span>
+            </a>
+          </div>
+          <div class="copyright">
+            <span class="copyright__text">Разработано</span>
+            <a class="copyright__link" href="htmlacademy.ru">
+              <img src="img/logo-htmlacademy.svg" alt="HTML Academy">
+            </a>
+          </div>
         </div>
       </footer>
     </div>
